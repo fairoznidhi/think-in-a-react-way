@@ -12,7 +12,6 @@
     code .
 
 ## 3. Dev depedencies install
-
     ```
     yarn add -D prettier
     yarn add -D babel-eslint
