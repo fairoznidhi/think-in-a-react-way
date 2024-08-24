@@ -42,7 +42,7 @@ yarn lint #or 'npm run lint'
 ```
 
 ## 4. Create Linting Configuration file manually
-Create a .eslintrc file in the project root and enter the below contents:
+Create a <mark>.eslintrc</mark> file in the project root and enter the below contents:
 ```bash
 {
   "extends": [
