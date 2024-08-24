@@ -22,7 +22,7 @@ cd AppName
 code .
 ```
 
-## 3. Dev depedencies install
+## 3. Linting Setup (Dev depedencies install)
 **Using Yarn:**
 ```bash
 yarn add -D prettier
@@ -33,6 +33,12 @@ yarn add -D eslint-config-prettier eslint-plugin-prettier
 
 **Or, use this script instead:(Add it into package.json-> scripts -> "lint":".....")**
 ```bash
-scripts: {
-    "lint": "yarn add -D prettier && yarn add -D babel-eslint && npx install-peerdeps --dev eslint-config-airbnb && yarn add -D eslint-config-prettier eslint-plugin-prettier"}
+"lint": "yarn add -D prettier && yarn add -D babel-eslint && npx install-peerdeps --dev eslint-config-airbnb && yarn add -D eslint-config-prettier eslint-plugin-prettier"
 ```
+
+**and then simply run the below command in the terminal -**
+```bash
+yarn lint #or 'npm run lint'
+```
+
+
