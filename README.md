@@ -93,4 +93,12 @@ Create a <mark>.eslintrc</mark> file in the project root and enter the below con
 }
 ```
 
+## 5. Settings
+Follow the below settings for VS Code -
+<ol>
+<li>Create a new folder called ".vscode" inside the project root folder.</li>
+Create a new file called "settings.json" inside that folder.
+Paste the below json in the newly created settings.json file and save the file.
+</ol>
+
 
