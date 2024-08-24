@@ -1,8 +1,8 @@
 ## 1. To create a folder for the app (Choose One)
 
 => yarn  
-    yarn global add create-react-app  
-    yarn create react-app AppName  
+ yarn global add create-react-app  
+ yarn create react-app AppName  
  => npm  
  npx create-react-app AppName
 
@@ -10,8 +10,15 @@
 
     cd AppName
     code .
+
 ## 3. Dev depedencies install
-    yarn add -D prettier  
-    yarn add -D babel-eslint  
-    npx install-peerdeps --dev eslint-config-airbnb  
-    yarn add -D eslint-config-prettier eslint-plugin-prettier  
+
+    yarn add -D prettier
+    yarn add -D babel-eslint
+    npx install-peerdeps --dev eslint-config-airbnb
+    yarn add -D eslint-config-prettier eslint-plugin-prettier
+
+    or, use this instead
+
+    scripts: {
+    "lint": "yarn add -D prettier && yarn add -D babel-eslint && npx install-peerdeps --dev eslint-config-airbnb && yarn add -D eslint-config-prettier eslint-plugin-prettier"}  
