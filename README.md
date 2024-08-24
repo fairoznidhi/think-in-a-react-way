@@ -31,7 +31,7 @@ npx install-peerdeps --dev eslint-config-airbnb
 yarn add -D eslint-config-prettier eslint-plugin-prettier
 ```
 
-Or, use this script instead:
+**Or, use this script instead:(Add it into package.json-> scripts -> "lint":".....")**
 ```bash
 scripts: {
     "lint": "yarn add -D prettier && yarn add -D babel-eslint && npx install-peerdeps --dev eslint-config-airbnb && yarn add -D eslint-config-prettier eslint-plugin-prettier"}
