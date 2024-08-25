@@ -1,5 +1,5 @@
 import React from "react";
-const element=React.createElement('h1',null,'Hello World!');
+const element=<h1>Hello World</h1>
 console.log(element);
 /*
 {
