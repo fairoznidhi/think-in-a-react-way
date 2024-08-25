@@ -145,3 +145,6 @@ Follow the below settings for VS Code -
 [React Documentation](https://legacy.reactjs.org/docs/getting-started.html)  
 **React.dev:** 
 [React.dev](https://react.dev/learn/start-a-new-react-project)  
+
+## 7. Vite install (***)
+This is so powerful. In newer create react app there is no create-react-app. Basic react is not present. So we can use vite instead. (Grab react and react-dom from npm, set up your custom build process with a bundler like [Vite](https://vitejs.dev/) or [Parcel](https://parceljs.org/), and add other tools as you need them for routing, static generation or server-side rendering, and more.)
