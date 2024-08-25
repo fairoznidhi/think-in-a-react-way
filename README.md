@@ -23,7 +23,9 @@ code .
 ```
 
 ## 3. Linting Setup (Dev depedencies install)
+
 **Using Yarn:**
+
 ```bash
 yarn add -D prettier
 yarn add -D babel-eslint
@@ -32,17 +34,21 @@ yarn add -D eslint-config-prettier eslint-plugin-prettier
 ```
 
 **Or, use this script instead:(Add it into package.json-> scripts -> "lint":".....")**
+
 ```bash
 "lint": "yarn add -D prettier && yarn add -D babel-eslint && npx install-peerdeps --dev eslint-config-airbnb && yarn add -D eslint-config-prettier eslint-plugin-prettier"
 ```
 
 **and then simply run the below command in the terminal -**
+
 ```bash
 yarn lint #or 'npm run lint'
 ```
 
 ## 4. Create Linting Configuration file manually
+
 Create a <mark>.eslintrc</mark> file in the project root and enter the below contents:
+
 ```bash
 {
   "extends": [
@@ -94,11 +100,48 @@ Create a <mark>.eslintrc</mark> file in the project root and enter the below con
 ```
 
 ## 5. Settings
+
 Follow the below settings for VS Code -
+
 <ol>
 <li>Create a new folder called ".vscode" inside the project root folder.</li>
-Create a new file called "settings.json" inside that folder.
-Paste the below json in the newly created settings.json file and save the file.
+<li>Create a new file called "settings.json" inside that folder.</li>
+<li>Paste the below json in the newly created settings.json file and save the file.</li>
 </ol>
 
+```bash
+{
+// Theme
+"workbench.colorTheme": "Dracula",
 
+// config related to code formatting
+"editor.defaultFormatter": "esbenp.prettier-vscode",
+"editor.formatOnSave": true,
+"[javascript]": {
+"editor.formatOnSave": false,
+"editor.defaultFormatter": null
+},
+"[javascriptreact]": {
+"editor.formatOnSave": false,
+"editor.defaultFormatter": null
+},
+"javascript.validate.enable": false, //disable all built-in syntax checking
+"editor.codeActionsOnSave": {
+"source.fixAll.eslint": true,
+"source.fixAll.tslint": true,
+"source.organizeImports": true
+},
+"eslint.alwaysShowStatus": true,
+// emmet
+"emmet.triggerExpansionOnTab": true,
+"emmet.includeLanguages": {
+"javascript": "javascriptreact"
+}
+}
+```
+
+## 6. React Documentation
+**Previous One:**
+[React Documentation](https://legacy.reactjs.org/docs/getting-started.html)
+**React.dev:**
+[React.dev](https://react.dev/learn/start-a-new-react-project)
