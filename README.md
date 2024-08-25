@@ -141,7 +141,7 @@ Follow the below settings for VS Code -
 ```
 
 ## 6. React Documentation
-**Previous One:**
-[React Documentation](https://legacy.reactjs.org/docs/getting-started.html)
-**React.dev:**
-[React.dev](https://react.dev/learn/start-a-new-react-project)
+**Previous One:** 
+[React Documentation](https://legacy.reactjs.org/docs/getting-started.html)  
+**React.dev:** 
+[React.dev](https://react.dev/learn/start-a-new-react-project)  
