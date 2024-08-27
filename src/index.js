@@ -12,3 +12,4 @@ setInterval(() => {
 
   ReactDOM.render(element, document.getElementById("root"));
 }, 1000);
+
