@@ -1,5 +1,5 @@
 ## 1. React JSX and Rendering Elements
-**index.js:**
+**index.js doing the work**
 ```javaScript
 import React from "react";
 const element=React.createElement('h1',null,'Hello World!');
@@ -12,7 +12,7 @@ console.log(element);
 }
 */
 ```
-**index.jsx/index.js + babel**
+**index.jsx/index.js + babel doing the work**
 ```javaScript
 import React from "react";
 const element=<h1>Hello World</h1>
@@ -32,4 +32,29 @@ const element = <h1>Hello World</h1>;
 Babel will transform it into something like this: 
 ```javascript 
 const element = React.createElement('h1', null, 'Hello World!');
+```
+
+**Attribute:**
+```javascript
+//const element= React.createElement('h1',{className:'heading'},'Hello World!');
+const element= <h1 className='heading'>Hello World!</h1>
+```
+```javascript
+//const element= React.createElement('h1',{className:'heading'},'Hello World!');
+const index=0;
+const element= (
+    <h1 className='heading' tabIndex={index}>
+    Hello World!
+    </h1>
+);
+/*
+element={
+  type: 'h1',
+  props:{
+    className: 'heading',
+    tabIndex: 0,
+    children: 'Hello World!',
+  },
+};
+*/
 ```
