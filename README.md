@@ -62,7 +62,7 @@ function Clock({ locale }) {
 ReactDOM.render(<Clock locale="bn-BD" />, document.getElementById("root"));
 ```
 
-**Code(Class based)**
+**Code(Class based)**  
 But this is still isn't a component. We have to extend this.
 
 ```javascript
@@ -117,7 +117,7 @@ ReactDOM.render(
 
 1. We can only pass props through component, but class gives stateful characteristics that it can create a state and can change the state itself.
 
-**React will rerender when props change**
+**React will rerender when props change**  
 Props will change from outside  
 
 ```javascript
