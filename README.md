@@ -35,6 +35,6 @@ ReactDOM.render(Clock(), document.getElementById("root"));
 ReactDOM.render(<Clock />, document.getElementById("root")); //both are same
 ```
 
-1. <Clock/> is like html
-2. Parameter can be given. <Clock locale='bn-BD'/>.
-3. Component will take the parameter as object. {locale: "bn-bd",}
+1. ```<Clock/>``` is like html
+2. Parameter can be given. ```<Clock locale='bn-BD'/>```.
+3. Component will take the parameter as object. ```{locale: "bn-bd",}```
