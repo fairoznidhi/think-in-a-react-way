@@ -58,3 +58,35 @@ element={
 };
 */
 ```
+```javascript
+const index=0;
+const element= (
+    <h1 className='heading' tabIndex={index}>
+      <span className='text'>Hello World!</span>
+      <img src=''/>
+    </h1>
+);
+/*
+element={
+  type: 'h1',
+  props:{
+    className: 'heading',
+    tabIndex: 0,
+    children: [
+      {
+        type: 'span',
+        props: {
+          className: 'text'
+        }
+      },
+      {
+        type: 'img',
+        props: {
+          src:''
+        }
+      },
+    ],
+  },
+};
+*/
+```

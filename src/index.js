@@ -1,10 +1,14 @@
 import React from "react";
-const element=<h1>Hello World</h1>
-console.log(element);
-/*
-{
-  type: "h1",
-  props: {
-    children: "Hello World!"
-}
-*/
+import ReactDOM from "react-dom";
+const index = 0;
+
+setInterval(() => {
+  const element = (
+    <h1 className="heading" tabIndex={index}>
+      <span className="text">Hello {new Date().toLocaleTimeString()}</span>
+      <img src="" />
+    </h1>
+  );
+
+  ReactDOM.render(element, document.getElementById("root"));
+}, 1000);
